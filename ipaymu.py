@@ -15,7 +15,7 @@ body =  {
             "notifyUrl":"http://your-callback-url.com",
             "comments": "Payment to PT Demo",
             "referenceId": "1234", #your reference ID
-            "paymenMethod": "va",
+            "paymentMethod": "va",
             "paymentChannel": "bca"
         } 
 
