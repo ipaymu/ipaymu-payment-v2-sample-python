@@ -6,7 +6,7 @@ import hmac
 
 ipaymuVa  = "1179000899" #your iPaymu VA
 ipaymuKey = "QbGcoO0Qds9sQFDmY0MWg1Tq.xtuh1" #your iPaymu API Key
-ipaymuUrl = "https://sandbox.ipaymu.com/api/v2/payment" #production: https://my.ipaymu.com
+ipaymuUrl = "https://sandbox.ipaymu.com/api/v2/transaction" #production: https://my.ipaymu.com
 body =  {
             "transactionId":"78174" #ipaymu transaction id
         } 
