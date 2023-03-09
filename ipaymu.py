@@ -6,9 +6,17 @@ import hmac
 
 ipaymuVa  = "1179000899" #your iPaymu VA
 ipaymuKey = "QbGcoO0Qds9sQFDmY0MWg1Tq.xtuh1" #your iPaymu API Key
-ipaymuUrl = "https://sandbox.ipaymu.com/api/v2/payment" #production: https://my.ipaymu.com
+ipaymuUrl = "https://sandbox.ipaymu.com/api/v2/payment/direct" #production: https://my.ipaymu.com
 body =  {
-            "transactionId":"78174" #ipaymu transaction id
+            "name":"Putu",
+            "phone":"08123456789",
+            "email":"putu@mail.com",
+            "amount":"100000",
+            "notifyUrl":"http://your-callback-url.com",
+            "comments": "Payment to PT Demo",
+            "referenceId": "1234", #your reference ID
+            "paymenMethod": "va",
+            "paymentChannel": "bca"
         } 
 
 data_body    = json.dumps(body)
